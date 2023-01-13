@@ -1,0 +1,20 @@
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <h3 class="header">Sign Up</h3>
+            <div class="body">
+                <form [formGroup]="signUpForm">
+                    <input formControlName="firstname" type="text" placeholder="First Name"/>
+                    <input formControlName="lastname" type="text" placeholder="Last Name"/>
+                    <input formControlName="username" type="text" placeholder="UserName"/>
+                    <input formControlName="password" type="password" placeholder="Password"/>
+                    <button (click)="onSubmitSignUp()" type="submit">Sign Up</button>
+                </form>
+            </div>
+            <div>
+                Already have account? <a routerLink="/login">Log In</a>
+            </div>
+        </div>
+    </div>
+</div>
+

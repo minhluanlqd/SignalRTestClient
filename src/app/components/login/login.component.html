@@ -1,0 +1,17 @@
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <h3 class="header">Login</h3>
+            <div class="body">
+                <form [formGroup]="loginForm">
+                    <input formControlName="username" type="text" placeholder="UserName"/>
+                    <input formControlName="password" type="password" placeholder="Password"/>
+                    <button (click)="onSubmitLogin()" type="submit">Login</button>
+                </form>
+            </div>
+            <div>
+                Don't have account? <a routerLink="/signup">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</div>
